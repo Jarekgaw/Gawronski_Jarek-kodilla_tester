@@ -1,12 +1,43 @@
 public class Application {
-    public static void main(String[] args) {
-    Person adam = new Person();
-    adam.name = "Adam";
-    adam.age = 40.5;
-    adam.height = 178;
+    private static String name;
+    private static double age;
+    private static double height;
 
-    adam.information();
+    public Application(String name, double age, double height) {
+        this.name = name;
+        this.age = age;
+        this.height = height;
+    }
+
+    public static void main(String[] args) {
+        Application application = new Application("Adam", 40.5, 178);
+        System.out.println(application.name + " " + application.age + " " + application.height);
+        if (name != null) {
+            if (age > 30 && height > 160) {
+                System.out.println("User is older than 30 and taller than 160cm");
+            } else {
+                System.out.println("User is 30 (or younger) or 160cm (or shorter)");
             }
         }
+    }
+}
 
 
+
+
+
+//public class Application {
+//   public static void main(String[] args) {
+//      String name = "Adam";
+//      double age = 40.5;
+//      double height = 178;
+//
+//      if (name != null) {
+//         if (age > 30 && height > 160) {
+//            System.out.println("User is older than 30 and taller than 160cm");
+//         } else {
+//            System.out.println("User is 30 (or younger) or 160cm (or shorter)");
+//         }
+//      }
+//  }
+//}

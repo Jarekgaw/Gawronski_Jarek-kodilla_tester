@@ -11,7 +11,7 @@ public class RandomNumbers {
         while (sum <= max) {
             int temp = random.nextInt(31);
             sum = sum + temp;
-
+            System.out.println(temp);
 
         }
     }
