@@ -20,7 +20,7 @@ public User(String name, int age) {
         for(int i = 0; i< user.length; i++) {
             result = result + user[i];
         }
-            System.out.println();
+            System.out.println(result);
 
     }
 }
