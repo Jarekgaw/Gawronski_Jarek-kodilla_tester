@@ -23,7 +23,7 @@ public class Notebook {
     public void checkWeight() {
         if (this.weight <= 600) {
             System.out.println("This notebook is light.");
-        } else if (this.weight >= 600 && this.weight > 1600) {
+        } if (this.weight > 1600) {
             System.out.println("This notebook is quite light.");
         } else {
             System.out.println("This notebook is heavy");

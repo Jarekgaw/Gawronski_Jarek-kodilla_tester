@@ -8,11 +8,5 @@ public class Main {
         char carClass = 'A';
         boolean isGoodProgrammer = true;
         System.out.println(myName);
-
-        Book book = Book.of("Isaac Asimov", "The Galaxy");
-        RandomNumbers randomNumbers = new RandomNumbers();
-        System.out.println(randomNumbers.wynikMin());
-        System.out.println(randomNumbers.maksimum());
-
     }
 }

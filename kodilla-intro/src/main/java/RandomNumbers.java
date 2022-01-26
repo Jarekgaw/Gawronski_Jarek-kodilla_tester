@@ -9,26 +9,28 @@ public class RandomNumbers {
         int result = 0;
         int sum = 0;
         int max = 5000;
-        min = 31;
-        maksimum = 0;
+        int getMin = 31;
+        int getMax = 0;
         while (sum <= max) {
             int temp = random.nextInt(31);
             sum = sum + temp;
             //System.out.println(temp);
-            if (temp < min) {
-                min = temp;
+            if (temp < getMin) {
+                getMin = temp;
             }
-            if (temp > maksimum) {
-                maksimum = temp;
+            if (temp > getMax) {
+                getMax = temp;
             }
 
         }
     }
-        public int wynikMin(){
-            return min;
+        public int getMin(){
+            int getMin;
+            return getMin;
         }
-        public int maksimum(){
-        return maksimum;
+        public int getMax(){
+        int getMax
+        return getMax;
     }
 
 }
