@@ -2,10 +2,7 @@ package com.kodilla.inheritance;
 
 public class test {
     public static void main(String[] args) {
-        OperatingSystem year = new OperatingSystem();
-        year.yearOn = 1987;
-        year.yearOff = 2000;
-        System.out.println(year.yearOn + " " +year.yearOff);
+        OperatingSystem year = new OperatingSystem(1987,2000);
         year.turnOn();
         year.turnOff();
 
