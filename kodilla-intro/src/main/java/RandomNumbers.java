@@ -25,11 +25,11 @@ public class RandomNumbers {
         }
     }
         public int getMin(){
-            int getMin;
+            int getMin = 0;
             return getMin;
         }
         public int getMax(){
-        int getMax
+        int getMax = 0;
         return getMax;
     }
 

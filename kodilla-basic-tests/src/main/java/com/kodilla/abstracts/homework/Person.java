@@ -1,4 +1,4 @@
-package com.kodilla.abstracts;
+package com.kodilla.abstracts.homework;
 
 public class Person extends Job{
     String firstName;
@@ -8,5 +8,4 @@ public class Person extends Job{
         super(Salary, responsibilities);
     }
 }
-
 

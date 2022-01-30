@@ -1,15 +1,15 @@
-package com.kodilla.abstracts;
+package com.kodilla.abstracts.homework;
 
 public class Square extends Shape {
     static double fieldA(double a)
     {
         return a = a * a;
 
-}
-     static double circumA(double b)
-{
-    return b = b * b * b * b;
-}
+    }
+    static double circumA(double b)
+    {
+        return b = b * b * b * b;
+    }
     @Override
     public void circumference() {
         System.out.println(Square.circumA(3));
