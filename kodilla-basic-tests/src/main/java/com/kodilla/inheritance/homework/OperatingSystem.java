@@ -1,4 +1,4 @@
-package com.kodilla.inheritance;
+package com.kodilla.inheritance.homework;
 
 public class OperatingSystem {
     private int yearOn;
@@ -9,15 +9,18 @@ public class OperatingSystem {
         this.yearOff = yearOff;
     }
     public void turnOn() {
-        System.out.println("Year of publishing " +yearOn);
+        System.out.println("Year of publishing " + yearOn);
     }
     public void turnOff() {
-        System.out.println("End publishing year " +yearOff);
+        System.out.println("End publishing year " + yearOff);
     }
     public int getYearOn() {
         return yearOn;
     }
     public int getYearOff() {
         return yearOff;
+    }
+    public void nowySystem(){
+        System.out.println("Year start new production" + getYearOn());
     }
 }
