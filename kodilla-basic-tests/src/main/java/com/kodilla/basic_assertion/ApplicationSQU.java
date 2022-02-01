@@ -1,15 +1,15 @@
 package com.kodilla.basic_assertion;
 
+import static org.testng.AssertJUnit.assertEquals;
+
 public class ApplicationSQU {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();
-        int a = 5;
-        int squResult = calculator.squ(a);
-        boolean correct = ResultChecker.assertEquals(25, squResult);
-        if (correct) {
-            System.out.println("Metoda squ działa prawidłowo dla liczb " + a);
-        } else {
-            System.out.println("Metoda squ nie działa prawidłowo dla liczb" + a);
-        }
+        double a = -4;
+        double b = 0;
+        double c = 5;
+        double subResult = calculator.squ(a, b);
+        double delta = 0;
+        assertEquals(5, subResult, delta);
     }
 }
