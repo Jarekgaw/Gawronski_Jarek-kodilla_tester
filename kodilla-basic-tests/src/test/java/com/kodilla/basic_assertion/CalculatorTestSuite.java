@@ -12,14 +12,14 @@ public class CalculatorTestSuite {
         double a = 5;
         double b = 8;
         double sumResult = calculator.sum(a, b);
-        double delta = 0;
+        double delta = 0.6;
         assertEquals(13, sumResult, delta);
     }
     @Test
     public void testSQU() {
         Calculator calculator = new Calculator();
         double a = -3;
-        double delta = 0;
+        double delta = 0.6;
         double squResult = calculator.squ(a);
         assertEquals(9, squResult, delta);
     }
@@ -27,9 +27,9 @@ public class CalculatorTestSuite {
         Calculator calculator = new Calculator();
             double a = 4.5;
             double b = 3;
-            double delta = 0;
+            double delta = 0.6;
             double subResult = calculator.sub(a,b);
-            assertEquals(1.5, subResult, delta) {
+            assertEquals(1.5, subResult, delta);
         }
     }
-}
+
