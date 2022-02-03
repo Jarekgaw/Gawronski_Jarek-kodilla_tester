@@ -2,7 +2,7 @@ package com.kodilla.inheritance.homework;
 
 public class NewOperatingSystem extends OperatingSystem {
 
-    public void TurnOn() {
+    public void turnOn() {
         System.out.println("Year start new production" + getYearOn());
     }
 

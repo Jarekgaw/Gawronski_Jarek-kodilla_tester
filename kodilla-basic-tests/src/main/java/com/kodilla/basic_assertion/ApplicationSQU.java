@@ -8,7 +8,7 @@ public class ApplicationSQU {
         double a = -4;
         double b = 0;
         double c = 5;
-        double subResult = calculator.squ(a, b);
+        double subResult = calculator.squ(a);
         double delta = 0;
         assertEquals(5, subResult, delta);
     }
