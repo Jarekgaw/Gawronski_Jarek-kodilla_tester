@@ -1,22 +1,73 @@
 package com.kodilla.bank.homework;
 
-//public class CashMaschine {
-    //private int[] accountBalance;
-    //private int size;
+public class CashMaschine {
+    private double[] accountBalance;
+    private int size;
 
-    //public CashMaschine() {
-      //  this.size = 0;
-       // this.accountBalance = new int[0];
-   // }
+    public CashMaschine() {
+        this.size = 0;
+    }
 
-    //public void add(int accountBalance) {
-       // this.size++;
-        //int[] newTab = new int[this.size];
-       // System.arraycopy(0, newTab, 0, accountBalance.length);
-        //newTab[this.size - 1] = accountBalance;
-       // this.accountBalance= newTab;
-    //}
+    public void add(double NewValue) {
+        this.size++;
+        double[] newTab = new double[this.size];
+        System.arraycopy(accountBalance, 0, newTab, 0, size);
+        newTab[this.size - 1] = NewValue;
+        this.accountBalance = newTab;
+    }
 
-    //public int[] getValues() {
-       // return values;
+    public double getBalance() {
+        double result = 0;
+        for (int i = 0; i < accountBalance.length; i++) {
+            result = result + accountBalance[i];
+        }
+        return result;
+    }
+
+    public int transactionNumber() {
+        return accountBalance.length;
+
+    }
+
+    public int getMinusTransaction() {
+        int result = 0;
+        for (int i = 0; i < accountBalance.length; i++) {
+            if (accountBalance[i] < 0) {
+                result = result + 1;
+            }
+        }
+        return result;
+    }
+
+    public int getPlusTransaction() {
+        int result = 0;
+        for (int i = 0; i < accountBalance.length; i++) {
+            if (accountBalance[i] > 0) {
+                result = result + 1;
+            }
+        }
+        return result;
+    }
+
+    public double getAverageMinus() {
+        double result = 0;
+        for (int i = 0; i < accountBalance.length; i++) {
+            if (accountBalance[i] < 0) {
+                result = accountBalance[i] + result;
+            }
+        }
+        return result / accountBalance.length;
+    }
+
+    public double getAveragePlus() {
+        double result = 0;
+        for (int i = 0; i < accountBalance.length; i++) {
+            if (accountBalance[i] > 0) {
+                result = accountBalance[i] + result;
+            }
+        }
+        return result / accountBalance.length;
+    }
+}
+
 
