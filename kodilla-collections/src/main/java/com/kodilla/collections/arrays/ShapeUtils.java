@@ -46,4 +46,6 @@ public class ShapeUtils {
         for (Shape shape : shapes)
             ShapeUtils.displayShapeInfo(shape);
     }
+    Random random = new Random();
+    Shape[] shapes = new Shape[random.nextInt(20) + 1];
 }

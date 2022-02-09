@@ -40,7 +40,7 @@ public class Bank {
         for (int i = 0; i < machines.length; i++) {
             result = result + machines[i].getAveragePlus();
         }
-        return result;
+        return result/ machines.length;
     }
 }
 

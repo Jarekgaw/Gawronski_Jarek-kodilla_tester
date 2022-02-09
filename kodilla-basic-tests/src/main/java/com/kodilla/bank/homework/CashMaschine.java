@@ -4,15 +4,17 @@ public class CashMaschine {
     private double[] accountBalance;
     private int size;
 
+
     public CashMaschine() {
         this.size = 0;
+        this.accountBalance = new double[0];
     }
 
-    public void add(double NewValue) {
+    public void add(double newValue) {
         this.size++;
         double[] newTab = new double[this.size];
         System.arraycopy(accountBalance, 0, newTab, 0, size);
-        newTab[this.size - 1] = NewValue;
+        newTab[this.size - 1] = newValue;
         this.accountBalance = newTab;
     }
 
@@ -24,8 +26,8 @@ public class CashMaschine {
         return result;
     }
 
-    public int transactionNumber() {
-        return accountBalance.length;
+    public int getTransactionNumber() {
+        return size;
 
     }
 
@@ -51,22 +53,22 @@ public class CashMaschine {
 
     public double getAverageMinus() {
         double result = 0;
-        for (int i = 0; i < accountBalance.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (accountBalance[i] < 0) {
                 result = accountBalance[i] + result;
             }
         }
-        return result / accountBalance.length;
+        return result / size;
     }
 
     public double getAveragePlus() {
         double result = 0;
-        for (int i = 0; i < accountBalance.length; i++) {
+        for (int i = 0; i < size; i++) {
             if (accountBalance[i] > 0) {
                 result = accountBalance[i] + result;
             }
         }
-        return result / accountBalance.length;
+        return result / size;
     }
 }
 

@@ -1,20 +1,30 @@
 package com.kodilla.collections.interfaces.homework;
 
-// public class Toyota implements Car{
- //   private int getSpeed;
- //   public Toyota (int getSpeed) {
-   //     this.getSpeed = getSpeed;
-    //}
+public class Toyota implements Car{
+   private int speed;
+   private int decreaseSpeed;
 
-    //@Override
-    //public void increaseSpeed() {
-      //  System.out.println("Get Speed" + getSpeed);
 
-    //}
+   public Toyota(int speed, int decreaseSpeed) {
+        this.speed = speed;
+        this.decreaseSpeed = decreaseSpeed;
 
-    //@Override
-   // public void decreaseSpeed() {
-     //   System.out.println("Get Speed" - getSpeed);
+    }
 
-    //}
-//}
+    @Override
+    public int getSpeed() {
+        return speed;
+    }
+
+    @Override
+    public void increaseSpeed() {
+        System.out.println("Toyota" + speed);
+
+    }
+
+    @Override
+   public void decreaseSpeed() {
+       System.out.println("Toyota" + decreaseSpeed);
+
+    }
+}
