@@ -15,7 +15,8 @@ public class Ford implements Car{
 
   @Override
     public void increaseSpeed() {
-        System.out.println("Ford" + getSpeed());
+
+    System.out.println("Ford" + getSpeed());
     }
 
     @Override

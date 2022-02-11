@@ -7,7 +7,8 @@ import java.util.Random;
 /*public class CarApplication {
     public static Car drawCar() {
         Random random = new Random();
-        Car[] cars = new Car[random.nextInt(15) + 1]
-
+        Car[] cars = new Car[random.nextInt(15) + 1];
+        return ;
     }
 }*/
+
