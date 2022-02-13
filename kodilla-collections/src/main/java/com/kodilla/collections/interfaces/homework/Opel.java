@@ -4,11 +4,12 @@ public class Opel implements Car {
     private int speed;
     private int decreaseSpeed;
 
-    public Opel(int speed, int decreaseSpeed) {
+    public Opel(int speed) {
       this.speed = speed;
-      this.decreaseSpeed = decreaseSpeed;
+     // this.decreaseSpeed = decreaseSpeed;
 
     }
+
     @Override
     public int getSpeed() {
         return speed;
