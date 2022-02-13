@@ -42,7 +42,7 @@ public class CarUtils {
             return new Ford(carC);
     }
 
-    public class CarApplication {
+    public static class CarApplication {
         public static void main(String[] args) {
             Car[] cars = new Car[16];
             for (int n = 0; n < cars.length; n++)

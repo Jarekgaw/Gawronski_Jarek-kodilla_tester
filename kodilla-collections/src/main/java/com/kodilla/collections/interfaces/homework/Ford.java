@@ -8,8 +8,12 @@ public class Ford implements Car{
     this.speed = speed;
     this.decreaseSpeed = decreaseSpeed;
   }
+
+  public Ford(double carC) {
+  }
+
   @Override
-  public int getSpeed(){
+  public double getSpeed(){
     return speed;
   }
 

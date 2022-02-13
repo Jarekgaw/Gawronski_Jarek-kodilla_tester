@@ -11,8 +11,11 @@ public class Toyota implements Car{
 
     }
 
+    public Toyota(double carB) {
+    }
+
     @Override
-    public int getSpeed() {
+    public double getSpeed() {
         return speed;
     }
 
