@@ -11,7 +11,6 @@ public class Opel implements Car {
     }
 
     public Opel(double speed, double i) {
-
     }
 
     @Override
