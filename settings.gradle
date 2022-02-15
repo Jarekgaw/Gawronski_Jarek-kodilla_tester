@@ -10,4 +10,5 @@ include 'kodilla-basic-tests'
 include 'kodilla-basic-tests'
 include 'kodilla-basic-tests'
 include 'kodilla-collections'
+include 'kodilla-collections-advanced'
 
