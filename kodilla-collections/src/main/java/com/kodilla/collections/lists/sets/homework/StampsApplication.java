@@ -14,7 +14,7 @@ public class StampsApplication {
         stamps.add(new Stamp("Local", "Small", true));
 
         System.out.println(stamps.size());
-        for (Stamp stamp : stamps) ;
+        for (Stamp stamp : stamps)
         System.out.println(stamps);
     }
 }

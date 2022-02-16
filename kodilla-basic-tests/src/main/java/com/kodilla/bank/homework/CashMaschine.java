@@ -31,7 +31,7 @@ public class CashMaschine {
 
     }
 
-    public int getMinusTransaction() {
+    public int getNumberOfMinusTransaction() {
         int result = 0;
         for (int i = 0; i < accountBalance.length; i++) {
             if (accountBalance[i] < 0) {
@@ -41,7 +41,7 @@ public class CashMaschine {
         return result;
     }
 
-    public int getPlusTransaction() {
+    public int getNumberOfPlusTransaction() {
         int result = 0;
         for (int i = 0; i < accountBalance.length; i++) {
             if (accountBalance[i] > 0) {
