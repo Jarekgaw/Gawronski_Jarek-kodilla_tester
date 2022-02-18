@@ -7,6 +7,7 @@ public class Book {
         this.title = tytul;
     }
     public static Book of(String autor, String tytul) {
+
         return new Book(autor, tytul);
     }
 
