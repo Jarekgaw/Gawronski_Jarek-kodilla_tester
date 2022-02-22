@@ -4,7 +4,7 @@ import com.kodilla.bank.homework.Bank;
 import com.kodilla.bank.homework.CashMaschine;
 import org.junit.jupiter.api.Test;
 
-public class BankTest {
+/*public class BankTest {
     @Test
     public void bankTesting() {
         Bank bank = new Bank(machines);
@@ -16,4 +16,4 @@ public class BankTest {
 
     }
 
-}
+}*/

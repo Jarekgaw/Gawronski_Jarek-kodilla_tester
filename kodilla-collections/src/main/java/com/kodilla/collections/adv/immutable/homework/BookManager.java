@@ -15,8 +15,6 @@ public class BookManager {
         System.out.println(books.size());
         for (Book book : books)
             System.out.println(book);
-
-
     }
 
 }
