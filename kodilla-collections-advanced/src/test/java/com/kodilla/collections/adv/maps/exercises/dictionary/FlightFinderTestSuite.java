@@ -13,10 +13,21 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class FlightFinderTestSuite {
     @Test
 
-    public void testFlightFinder() {
+    public void findFlightsFrom() {
         FlightFinder flightFinder = new FlightFinder();
         flightFinder.findFlightsFrom("Berlin");
+        List<Flight> result = flightFinder.findFlightsFrom("Berlin");
+        assertEquals(1,result.size());
 
     }
-    List<Flight> result = "Berlin";
+    @Test
+
+    public void testFindFlightsToReturnZero() {
+        FlightFinder flightFinder = new FlightFinder();
+        flightFinder.findFlightsTo("Warsaw");
+        List<Flight> result = flightFinder.findFlightsTo("Warsaw");
+        assertEquals(0, result.size());
+
+
+    }
 }
