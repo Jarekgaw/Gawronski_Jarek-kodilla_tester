@@ -16,8 +16,7 @@ public class ForumStats {
         double avg2 = UsersRepository.getUsersList()
                 .stream()
                 .filter(u -> u.getAge() < 40)
-                .map(u -> u.getNumberOfPost())
-                .mapToInt(n -> n)
+                .mapToInt(n -> n.getNumberOfPost())
                 .average()
                 .getAsDouble();
         System.out.println(avg2);
