@@ -1,6 +1,5 @@
 package com.kodilla.collections.adv.immutable.homework;
 
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,5 +15,4 @@ public class BookManager {
         for (Book book : books)
             System.out.println(book);
     }
-
 }

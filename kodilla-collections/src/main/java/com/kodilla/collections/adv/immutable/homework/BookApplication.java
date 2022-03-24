@@ -8,4 +8,5 @@ public class BookApplication {
         System.out.println(book.equals(book3));
         System.out.println(book.equals(book2));
     }
+
 }

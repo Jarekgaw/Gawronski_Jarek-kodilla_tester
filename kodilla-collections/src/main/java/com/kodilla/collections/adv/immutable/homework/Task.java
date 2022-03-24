@@ -17,3 +17,4 @@ public final class Task {
         return duration;
     }
 }
+
