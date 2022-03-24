@@ -1,7 +1,5 @@
 package com.kodilla.collections.lists.sets.homework;
 
-import org.w3c.dom.ls.LSOutput;
-
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,4 +15,5 @@ public class StampsApplication {
         for (Stamp stamp : stamps)
             System.out.println(stamp);
     }
+
 }
