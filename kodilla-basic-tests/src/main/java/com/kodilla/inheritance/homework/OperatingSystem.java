@@ -9,6 +9,7 @@ public class OperatingSystem {
         this.yearOff = yearOff;
     }
     public void turnOn() {
+
         System.out.println("Year of publishing " + yearOn);
     }
     public void turnOff() {
@@ -18,9 +19,11 @@ public class OperatingSystem {
         return yearOn;
     }
     public int getYearOff() {
+
         return yearOff;
     }
-    public void nowySystem(){
+    public void newSystem(){
+
         System.out.println("Year start new production" + getYearOn());
     }
 }
