@@ -8,14 +8,17 @@ public class Grades {
 
 
     }
+
     public void add(int value) {
         if (this.size == 10) {
             return;
         }
         this.grades[this.size] = value;
         this.size++;
+        int lastAddGrades = grades[value];
+
     }
-    public double getaverage() {
+    public double getAverage() {
         double sum = 0;
         for(int i = 0; i < size; i++) {
             sum = sum + grades[i];
