@@ -9,8 +9,6 @@ import com.kodilla.collections.interfaces.homework.Toyota;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.kodilla.collections.arrays.homework.CarUtils.describeCar;
-
 public class CarsListApplication {
     public static void main(String[] args) {
         List<Car> cars = new ArrayList<>();
@@ -28,6 +26,7 @@ public class CarsListApplication {
             System.out.println(cars.size());
         }
     }
+
 }
 
 
