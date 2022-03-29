@@ -10,6 +10,7 @@ public class PersonTestSuite {
     @ParameterizedTest
     @MethodSource(value = "com.kodilla.parametrized_tests.homework.PersonSources#personList")
     public void shouldCountBMI(String expected, Person person) {
+
         assertEquals(expected, person.getBMI());
     }
 }
