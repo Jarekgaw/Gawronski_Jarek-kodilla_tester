@@ -9,5 +9,6 @@ public class NewOperatingSystem extends OperatingSystem {
     public NewOperatingSystem(int yearOn, int yearOff) {
         super(yearOn, yearOff);
         System.out.println();
+
     }
 }

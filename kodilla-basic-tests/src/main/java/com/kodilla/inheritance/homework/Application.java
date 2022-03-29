@@ -7,7 +7,7 @@ public class Application {
         operatingSystem.turnOff();
 
         NewOperatingSystem newOperatingSystem = new NewOperatingSystem(2021,2022);
-        newOperatingSystem.nowySystem();
+        newOperatingSystem.newSystem();
 
         OldOperatingSystem oldOperatingSystem = new OldOperatingSystem(1988, 2021);
         oldOperatingSystem.turnOff();
