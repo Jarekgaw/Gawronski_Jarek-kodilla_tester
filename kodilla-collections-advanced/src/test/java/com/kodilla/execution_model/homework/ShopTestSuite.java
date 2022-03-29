@@ -22,6 +22,7 @@ public class ShopTestSuite {
         assertEquals(1, shop.getSize());
     }
 
+
     @Test
     public void shouldGetOrdersBeetwenDates() {
         shop.addOrder(order1);
