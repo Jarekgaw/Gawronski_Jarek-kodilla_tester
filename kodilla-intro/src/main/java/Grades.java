@@ -26,4 +26,5 @@ public class Grades {
         return sum / this.size;
 
     }
+
 }
