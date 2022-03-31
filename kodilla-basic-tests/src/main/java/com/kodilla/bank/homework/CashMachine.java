@@ -1,11 +1,11 @@
 package com.kodilla.bank.homework;
 
-public class CashMaschine {
+public class CashMachine {
     private double[] accountBalance;
     private int size;
 
 
-    public CashMaschine() {
+    public CashMachine() {
         this.size = 0;
         this.accountBalance = new double[0];
     }
@@ -13,7 +13,7 @@ public class CashMaschine {
     public void add(double newValue) {
         this.size++;
         double[] newTab = new double[this.size];
-        System.arraycopy(accountBalance, 0, newTab, 0, size);
+        System.arraycopy(accountBalance, 0, newTab, 0, accountBalance.length);
         newTab[this.size - 1] = newValue;
         this.accountBalance = newTab;
     }
@@ -53,22 +53,32 @@ public class CashMaschine {
 
     public double getAverageMinus() {
         double result = 0;
+        int counter = 0;
         for (int i = 0; i < size; i++) {
             if (accountBalance[i] < 0) {
                 result = accountBalance[i] + result;
+                counter++;
             }
         }
-        return result / size;
+        if (result == 0) {
+            return 0;
+        }
+        return result / counter;
     }
 
     public double getAveragePlus() {
         double result = 0;
+        int counter = 0;
         for (int i = 0; i < size; i++) {
             if (accountBalance[i] > 0) {
                 result = accountBalance[i] + result;
+                counter++;
             }
         }
-        return result / size;
+        if (result == 0) {
+            return 0;
+        }
+        return result / counter;
     }
 }
 

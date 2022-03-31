@@ -1,11 +1,14 @@
 package com.kodilla.spring.basic.dependency_injection.homework;
 
-public class NotificationService {
-    public void success(String address) {
-        System.out.println("Package delivered to: " + address);
-    }
+public class NotificationService implements Service {
 
-    public void fail(String address) {
-        System.out.println("Package not delivered to: " + address);
+    @Override
+    public boolean deliver(String address, double weight) {
+        if (weight > 30) {
+            System.out.println("Package not delivered to: " + address);
+            return false;
+        }
+        System.out.println("Package delivered to: " + address);
+        return true;
     }
 }

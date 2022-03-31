@@ -1,10 +1,10 @@
 package com.kodilla.bank.homework;
 
 public class Bank {
-    private CashMaschine machines[];
+    private CashMachine machines[];
     private double size;
 
-    public Bank(CashMaschine[] machines) {
+    public Bank(CashMachine[] machines) {
         this.machines = machines;
         this.size = size;
 
@@ -19,7 +19,7 @@ public class Bank {
         return result;
     }
 
-    public int getMinusMachines() {
+    public int getNumberOfMinusTransaction() {
         int result = 0;
         for (int i = 0; i < machines.length; i++) {
             result = result + machines[i].getNumberOfMinusTransaction();
@@ -37,10 +37,11 @@ public class Bank {
 
     public double getTotalAverageMinus() {
         double result = 0;
+        int counter = 0;
         for (int i = 0; i < machines.length; i++) {
             result = result + machines[i].getAverageMinus();
         }
-        return result;
+        return result / machines.length;
     }
 
     public double getTotalAveragePlus() {
