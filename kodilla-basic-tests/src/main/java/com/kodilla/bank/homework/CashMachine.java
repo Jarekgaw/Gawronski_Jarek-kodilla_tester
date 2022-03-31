@@ -17,7 +17,6 @@ public class CashMachine {
         newTab[this.size - 1] = newValue;
         this.accountBalance = newTab;
     }
-
     public double getBalance() {
         double result = 0;
         for (int i = 0; i < accountBalance.length; i++) {

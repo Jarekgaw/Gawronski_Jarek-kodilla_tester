@@ -51,6 +51,7 @@ public class Bank {
         }
         return result/ machines.length;
     }
+
 }
 
 

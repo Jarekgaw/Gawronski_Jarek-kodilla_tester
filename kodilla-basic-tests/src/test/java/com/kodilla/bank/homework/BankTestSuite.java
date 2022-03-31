@@ -72,6 +72,5 @@ public class BankTestSuite {
             CashMachine[] machines = {cashMachine1, cashMachine2, cashMachine3};
             Bank bank = new Bank(machines);
             assertEquals(4.5, bank.getTotalAveragePlus());
-
         }
     }

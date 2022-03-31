@@ -60,5 +60,6 @@ class CashMachineTestSuite {
         cashMachine.add(-4);
         cashMachine.add(-2);
         assertEquals(3,cashMachine.getAveragePlus());
+
     }
 }
