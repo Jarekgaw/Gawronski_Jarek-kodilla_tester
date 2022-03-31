@@ -26,7 +26,6 @@ public class CarsListApplication {
             System.out.println(cars.size());
         }
     }
-
 }
 
 
