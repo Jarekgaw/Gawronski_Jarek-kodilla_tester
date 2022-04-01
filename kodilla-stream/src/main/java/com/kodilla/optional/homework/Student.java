@@ -13,6 +13,7 @@ public class Student {
         return name;
     }
 
+
     public Teacher getTeacher() {
         return teacher;
     }
