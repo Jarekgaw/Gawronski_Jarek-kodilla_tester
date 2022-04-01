@@ -21,5 +21,6 @@ public class SchoolDirectory {
 
         for (Map.Entry<School, Principal> schoolEntry : schoolDirector.entrySet())
         System.out.println(schoolDirector.entrySet());
+
     }
 }
