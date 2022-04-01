@@ -15,5 +15,4 @@ public class StampsApplication {
         for (Stamp stamp : stamps)
             System.out.println(stamp);
     }
-
 }
