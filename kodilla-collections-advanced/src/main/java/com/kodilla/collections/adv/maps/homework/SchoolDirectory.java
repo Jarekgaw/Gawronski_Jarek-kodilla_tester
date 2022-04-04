@@ -19,8 +19,8 @@ public class SchoolDirectory {
         schoolDirector.put(nineLO, tomaszewski);
 
 
-        for (Map.Entry<School, Principal> schoolEntry : schoolDirector.entrySet())
-        System.out.println(schoolDirector.entrySet());
-
+        for (Map.Entry<School, Principal> schoolEntry : schoolDirector.entrySet()) {
+            System.out.println(schoolDirector.entrySet());
+        }
     }
 }
