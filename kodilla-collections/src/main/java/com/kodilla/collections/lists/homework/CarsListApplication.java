@@ -23,8 +23,8 @@ public class CarsListApplication {
 
         for (int n = 0; n < cars.size(); n++) {
             CarUtils.describeCar(cars.get(n));
-            System.out.println(cars.size());
         }
+        System.out.println(cars.size());
     }
 }
 
