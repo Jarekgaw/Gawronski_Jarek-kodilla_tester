@@ -17,7 +17,6 @@ public class Warehouse {
                 .filter(n -> n.getNumber().equals(number))
                 .findAny().orElseThrow(() -> new OrderDoesntExistException());
         return order;
-
     }
 
     public String isOrderUse(String number) throws OrderDoesntExistException {

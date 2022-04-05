@@ -14,4 +14,5 @@ public class WarehouseAppTestSuite {
         //then
         assertThrows(OrderDoesntExistException.class, () ->warehouse.isOrderUse("Order5"));
     }
+
 }
