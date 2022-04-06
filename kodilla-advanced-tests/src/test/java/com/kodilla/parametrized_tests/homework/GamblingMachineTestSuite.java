@@ -25,6 +25,7 @@ public class GamblingMachineTestSuite {
 
         assertThrows(InvalidNumbersException.class, () -> machines.howManyWins(number1));
     }
+
 }
 
 
