@@ -19,7 +19,6 @@ public class BookDto {
         return Objects.hash(title, author);
     }
 
-
     public BookDto() {
 
     }
