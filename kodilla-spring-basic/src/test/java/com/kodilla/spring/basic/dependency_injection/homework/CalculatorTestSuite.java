@@ -5,8 +5,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CalculatorTestSuite {
 
     @Test
@@ -18,6 +16,5 @@ class CalculatorTestSuite {
         Assertions.assertEquals(5,bean.subtract(7, 2));
         Assertions.assertEquals(5,bean.multiply(2, 2.5));
     }
-
 
 }
