@@ -9,7 +9,6 @@ public class BankTestSuite {
     CashMachine cashMachine2 = new CashMachine();
     CashMachine cashMachine3 = new CashMachine();
 
-
     @Test
     public void shouldGetTotalBalance() {
         cashMachine1.add(2);
@@ -73,4 +72,5 @@ public class BankTestSuite {
             Bank bank = new Bank(machines);
             assertEquals(4.5, bank.getTotalAveragePlus());
         }
+
     }

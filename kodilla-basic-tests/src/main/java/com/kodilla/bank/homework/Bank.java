@@ -6,7 +6,7 @@ public class Bank {
 
     public Bank(CashMachine[] machines) {
         this.machines = machines;
-        this.size = size;
+        this.size = machines.length;
 
     }
 

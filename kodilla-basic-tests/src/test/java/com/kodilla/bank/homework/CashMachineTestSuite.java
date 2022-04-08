@@ -12,7 +12,6 @@ class CashMachineTestSuite {
         cashMachine.add(2);
         assertEquals(2,cashMachine.getBalance());
     }
-
     @Test
     void getBalance() {
         CashMachine cashMachine = new CashMachine();
