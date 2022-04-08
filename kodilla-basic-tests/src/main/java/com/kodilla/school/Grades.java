@@ -16,7 +16,7 @@ public class Grades {
         this.values = newTab;
 
     }
-    public int [] getValues() {
+    public int[] getValues() {
         return values;
 
     }
