@@ -16,6 +16,7 @@ public class ShopTestSuite {
     Order order5 = new Order(145, LocalDate.of(2015, 3, 17), "JanuszKowalewski54");
 
     @Test
+
     public void shouldAddOrdersToShop() {
         assertEquals(0, shop.getSize());
         shop.addOrder(order1);

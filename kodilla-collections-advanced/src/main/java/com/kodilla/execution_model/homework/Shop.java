@@ -35,8 +35,5 @@ public class Shop {
                 .reduce(0.0, (sum, order) -> sum + order.getValue(), Double::sum);
 
     }
-
-
-
 }
 
