@@ -23,6 +23,5 @@ public class Grades {
             sum = sum + grades[i];
         }
         return sum / this.size;
-
     }
 }
