@@ -15,7 +15,7 @@ public class Grades {
         this.size++;
     }
     public int getLastGrade () {
-        return this.grades[this.grades.length -1];
+        return this.grades[this.size -1];
     }
     public double getAverage() {
         double sum = 0;
