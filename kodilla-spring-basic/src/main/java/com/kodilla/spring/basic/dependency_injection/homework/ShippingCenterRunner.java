@@ -7,6 +7,7 @@ public class ShippingCenterRunner {
         this.service = service;
     }
 
+
     public void sendPackage(String address, double weight) {
         if (this.service.deliver(address, weight)){
             this.service = new NotificationService();

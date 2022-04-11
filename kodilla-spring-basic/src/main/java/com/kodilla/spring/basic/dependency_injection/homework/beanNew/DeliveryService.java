@@ -8,6 +8,7 @@ public class DeliveryService {
         if (weight > 30) {
             return false;
         }
+
         return true;
     }
 }
