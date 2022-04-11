@@ -27,6 +27,7 @@ class CashMachineTestSuite {
         assertEquals(2,cashMachine.getTransactionNumber());
     }
 
+
     @Test
     void getNumberOfMinusTransaction() {
         CashMachine cashMachine = new CashMachine();

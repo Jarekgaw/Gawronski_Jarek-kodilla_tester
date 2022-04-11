@@ -22,6 +22,7 @@ public class BankTestSuite {
         assertEquals(12, bank.getTotalBalance());
     }
 
+
     @Test
     public void shouldGetMinusMachines() {
         cashMachine1.add(2);

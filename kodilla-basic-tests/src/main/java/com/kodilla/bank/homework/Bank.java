@@ -2,11 +2,10 @@ package com.kodilla.bank.homework;
 
 public class Bank {
     private CashMachine machines[];
-    private double size;
+
 
     public Bank(CashMachine[] machines) {
         this.machines = machines;
-        this.size = machines.length;
 
     }
 

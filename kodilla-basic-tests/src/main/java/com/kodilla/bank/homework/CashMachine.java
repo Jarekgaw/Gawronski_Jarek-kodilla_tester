@@ -78,6 +78,7 @@ public class CashMachine {
         }
         return result / counter;
     }
+
 }
 
 
