@@ -7,6 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 class CalculatorTestSuite {
 
+
     @Test
     public void shouldCalculate(){
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.basic");
