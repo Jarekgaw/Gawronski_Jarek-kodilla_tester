@@ -12,6 +12,7 @@ public class PersonTestSuite {
     public void shouldCountBMI(String expected, Person person) {
 
         assertEquals(expected, person.getBMI());
+
     }
 
 }
