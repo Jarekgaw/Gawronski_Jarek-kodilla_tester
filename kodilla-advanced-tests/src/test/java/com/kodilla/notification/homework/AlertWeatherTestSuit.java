@@ -3,8 +3,6 @@ package com.kodilla.notification.homework;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class AlertWeatherTestSuit {
     AlertWeather alertWeather = new AlertWeather();
     Customer customer = Mockito.mock(Customer.class);
@@ -18,7 +16,6 @@ class AlertWeatherTestSuit {
         alertWeather.sendNotificationToAll(notification);
         Mockito.verify(customer, Mockito.times(1)).receive(notification);
     }
-
     @Test
     void addSubscriber() {
         alertWeather.addSubscriber(customer,location);

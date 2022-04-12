@@ -61,6 +61,5 @@ public class AlertWeather {
         this.subscribers.remove(location);
 
     }
-
 }
 
