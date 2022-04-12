@@ -17,4 +17,5 @@ LocalTime time;
     public LocalTime getTime() {
         return time;
     }
+
 }

@@ -19,4 +19,5 @@ public class ClockTestSuite {
         Assertions.assertNotEquals(secondBean.getTime(), thirdBean.getTime());
         Assertions.assertNotEquals(firstBean.getTime(), thirdBean.getTime());
     }
+
 }
