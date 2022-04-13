@@ -7,11 +7,7 @@ public class SUV implements Car{
     public boolean hasHeadlightsTurnedOn() {
         LocalDateTime now = LocalDateTime.now();
         int time = now.getHour();
-        if (20 > time && time > 6) {
-            return false;
-        } else {
-            return true;
-        }
+        return 20 > time && time > 6;
 
     }
 

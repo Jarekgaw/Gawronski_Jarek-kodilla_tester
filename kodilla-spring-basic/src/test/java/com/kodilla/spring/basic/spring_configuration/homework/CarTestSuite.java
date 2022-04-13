@@ -15,4 +15,5 @@ class CarTestSuite {
         //Assertions.assertFalse(car.hasHeadlightsTurnedOn());
         // tutaj w zależności od godziny uruchomienia testu, bo pobiera actualtime
     }
+
 }
