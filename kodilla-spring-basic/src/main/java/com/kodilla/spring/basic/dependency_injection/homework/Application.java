@@ -6,6 +6,6 @@ public class Application {
         Service service = new DeliveryService();
         ShippingCenterRunner shippingCenterRunner = new ShippingCenterRunner(service);
         shippingCenterRunner.sendPackage("Hill Street 11, New York", 18.2);
-
     }
+
 }

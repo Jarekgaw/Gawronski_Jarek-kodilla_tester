@@ -15,5 +15,6 @@ public class ShippingCenterRunner {
             this.service = new NotificationService();
             this.service.deliver(address, weight);
         }
+
     }
 }

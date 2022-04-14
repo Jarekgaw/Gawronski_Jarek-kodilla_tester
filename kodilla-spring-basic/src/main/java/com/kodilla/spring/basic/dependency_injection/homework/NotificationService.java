@@ -9,6 +9,7 @@ public class NotificationService implements Service {
             System.out.println("Package not delivered to: " + address);
             return false;
         }
+
         System.out.println("Package delivered to: " + address);
         return true;
     }
