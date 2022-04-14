@@ -33,6 +33,7 @@ public class Order {
         Order order = (Order) o;
         return Double.compare(order.value, value) == 0 && Objects.equals(date, order.date) && Objects.equals(login, order.login);
     }
+
     @Override
     public int hashCode() {
         return Objects.hash(value, date, login);

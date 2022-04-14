@@ -3,8 +3,10 @@ package com.kodilla.execution_model.homework;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
+import java.util.HashSet;
+import java.util.Set;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ShopTestSuite {
 
@@ -31,7 +33,10 @@ public class ShopTestSuite {
         shop.addOrder(order3);
         shop.addOrder(order4);
         shop.addOrder(order5);
-
+        Set<Order> expected = new HashSet<>();
+        expected.add(order1);
+        expected.add(order3);
+        assertEquals(expected, shop.getOrdersBetweenDates(LocalDate.of(2021, 2, 10), LocalDate.of(2022, 3, 10)));
     }
     @Test
     public void shouldGetValueMinMax() {
@@ -40,7 +45,9 @@ public class ShopTestSuite {
         shop.addOrder(order3);
         shop.addOrder(order4);
         shop.addOrder(order5);
-
+        Set<Order> expected = new HashSet<>();
+        expected.add(order2);
+        assertEquals(expected, shop.getOrdersBetweenValues(666, 700.00));
     }
     @Test
     public void shouldGetSize(){

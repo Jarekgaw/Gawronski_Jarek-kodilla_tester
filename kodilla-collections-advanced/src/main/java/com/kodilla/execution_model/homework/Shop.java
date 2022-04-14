@@ -11,6 +11,7 @@ public class Shop {
     public void addOrder(Order order) {
         this.orders.add(order);
     }
+
     public Set<Order> getOrdersBetweenDates(LocalDate dateFrom,LocalDate dateTo){
         return orders
                 .stream()
