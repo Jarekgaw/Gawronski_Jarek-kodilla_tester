@@ -4,4 +4,5 @@ public interface Service {
 
     boolean deliver(String address, double weight);
 
+
 }

@@ -12,5 +12,6 @@ public class NotificationService implements Service {
 
         System.out.println("Package delivered to: " + address);
         return true;
+
     }
 }

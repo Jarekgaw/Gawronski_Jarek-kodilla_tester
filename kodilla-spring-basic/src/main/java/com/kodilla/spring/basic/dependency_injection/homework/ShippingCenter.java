@@ -1,9 +1,9 @@
 package com.kodilla.spring.basic.dependency_injection.homework;
 
-public class ShippingCenterRunner {
+public class ShippingCenter {
     private Service service;
 
-    public ShippingCenterRunner(Service service) {
+    public ShippingCenter(Service service) {
         this.service = service;
     }
 
