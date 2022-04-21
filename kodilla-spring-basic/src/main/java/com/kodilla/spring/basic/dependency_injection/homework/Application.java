@@ -3,8 +3,10 @@ package com.kodilla.spring.basic.dependency_injection.homework;
 public class Application {
 
     public static void main(String[] args) {
-        Service service = new DeliveryService();
-        ShippingCenter shippingCenter = new ShippingCenter(service);
+
+        DeliveryService deliveryService = new AutoDeliveryService();
+        NotificationService notificationService = new AutoNotificationService();
+        ShippingCenter shippingCenter = new ShippingCenter(deliveryService, notificationService);
         shippingCenter.sendPackage("Hill Street 11, New York", 18.2);
     }
 }
